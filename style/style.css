@@ -1,0 +1,22 @@
+.conteiner .input {
+  padding: 10px 26px;
+}
+
+.add_btn {
+  padding: 10px 30px;
+  cursor: pointer;
+  border: none;
+  background-color: black;
+  color: #fff;
+  border-radius: 10px;
+}
+.add_btn:hover {
+  background-color: grey;
+  color: #000;
+}
+
+.btn_new_style {
+  margin-left: 1%;
+  padding: 5px 15px;
+  font-size: 10px;
+}/*# sourceMappingURL=style.css.map */
