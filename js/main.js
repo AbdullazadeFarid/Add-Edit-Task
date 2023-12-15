@@ -16,7 +16,7 @@ add_btn.addEventListener("click",function(){
 
 if( input.value.trim()==""){
     alert("ekrana yazi ver")
-    input.value=""   // bu o demekdiki inputa nese daxil edib add edenen sora inputdaki yazi silinsin
+    input.value=""   // bu o demekdiki inputa nese daxil edende onu gostersin
 } else{
     var li = document.createElement("li")  //li yaradirig
     list.appendChild(li)   //li -ni  UL e elave edirik
