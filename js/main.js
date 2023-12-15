@@ -15,8 +15,9 @@ add_btn.addEventListener("click",function(){
 
 
 if( input.value.trim()==""){
-    alert("ekrana yazi ver")
-    input.value=""   // bu o demekdiki inputa nese daxil edende onu gostersin
+    alert("Inputu bow saxlama ")
+    input.value =  "";
+
 } else{
     var li = document.createElement("li")  //li yaradirig
     list.appendChild(li)   //li -ni  UL e elave edirik
@@ -36,16 +37,21 @@ if( input.value.trim()==""){
    input.value=""   // bu o demekdiki inputa nese daxil edib add edenen sora inputdaki yazi silinsin
 
    newbtn.addEventListener("click" , function(){  //burada yeni btn yeni EDIT e click etdikde neynesin onu qeyd edirkk
-    var new_value = prompt("" ,span.textContent ) //EDIT e click etdikde yazilan deyer prompta cixsin
-    span.textContent= new_value   //promptda deyisdiyimiz deyeri ekranda yeni spanda gostersin
-
-    if(new_value){
-span.innerText = new_value;
+    var new_value = prompt("" ,span.textContent.trim() ) //EDIT e click etdikde yazilan deyer prompta cixsin , Trim i yaziriqki edit etdikde eger kimsee birnece probel buraxib ve nese yazibsa edit etdikde promptda probeller cixmasin
+       //promptda deyisdiyimiz deyeri ekranda yeni spanda gostersin
+    if(new_value.trim()){
+        span.innerText = new_value;
     }else{
-        alert("Bow saxlama")
+        alert("inputu bow saxlama")
     }
 })
 
+
+
+
+
+
 }
 })
+
 
